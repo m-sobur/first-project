@@ -1,0 +1,211 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.body{
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1170px;
+}
+.header{
+  display: flex;
+  justify-content: space-between;
+  height: 100px;
+  align-items: center;
+
+}
+.header__nav{
+  display: flex;
+  align-items: center;
+}
+.link{
+  color: var(--link-clr);
+  font-size: var(--link-fs);
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.link_style_nav{
+  --link-clr:#646667;
+  --link-fs:12px;
+}
+.nav__link ~ .nav__link{
+  margin-left: 2rem;
+  display: flex;
+  align-items: center;
+}
+.link__img{
+  margin-left: 1rem;
+}
+.first-screen__lead{
+  position: relative;
+  margin-bottom: 3rem;
+}
+.first-screen__img{
+  max-width: 1170px;
+}
+.title{
+  font-family: 'PT Serif', serif;
+  font-style: normal;
+  font-weight: var(--title-fweight);
+  font-size: var(--title-fsize);
+  color: var(--title-color);
+  text-shadow: var(--title-shadow);
+  text-transform: uppercase;
+}
+.title_style_primary{
+  --title-color:#FFFFFF;
+  --title-shadow: 0px 3px 1px rgba(0, 0, 0, 0.6);
+  --title-fweight:700;
+  --title-fsize:32px;
+}
+.first-screen__title{
+  position: absolute;
+  max-width: 770px;
+  top: 232px;
+  left: 400px;
+  bottom: 83px;
+}
+.first-screen__text{
+  width: 970px;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+.first-screen{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 100px;
+}
+.btn{
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background: #007397;
+  text-decoration: none;
+  display: inline-block;
+  border: none;
+  padding: 20px;
+}
+.title_style_secondary{
+  --title-color: #3C3F3D;
+  --title-shadow: none;
+  --title-fweight: 700;
+  --title-fsize:32px;
+}
+.section__text{
+  width: 670px;
+  margin-bottom: 48px;
+}
+
+.section__metrics{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 48px;
+}
+.title_style_metrics{
+  --title-color: #007397;
+  --title-shadow: none;
+  --title-fweight:300;
+  --title-fsize:54px;
+}
+.section__value{
+  text-align: center;
+}
+.text{
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: var(--text-fsize);
+  line-height: 36px;
+  color: var(--text-color);
+}
+.text_style_metrics{
+  --text-fsize: 16px;
+  --text-color: #AEC3D4;
+}
+.text_style_primary{
+  --text-fsize: 20px;
+  --text-color: #646667;
+}
+.section__description{
+  text-align: center;
+}
+.section__link{
+  width: 270px;
+}
+.section{
+  margin-bottom: 100px;
+}
+.section__wrap{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #646667;
+}
+.section__title{
+  margin-bottom: 48px;
+}
+.section__title{
+  display: flex;
+}
+.section__sidebar{
+  display: flex;
+  justify-content: space-between;
+  background-color: aqua;
+}
+.sidebar__item ~ .sidebar__item{
+  margin-left: 15px;
+}
+.link_style_sidebar{
+  --link-fs: 16px;
+  --link-clr: #D3CFCE;
+}
