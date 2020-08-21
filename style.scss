@@ -71,6 +71,13 @@ table {
   --link-clr:#646667;
   --link-fs:12px;
 }
+.link_style_nav:hover{
+  color: #007397;
+}
+.link_style_nav:focus{
+  color: #007397;
+  outline: none;
+}
 .nav__link ~ .nav__link{
   margin-left: 2rem;
   display: flex;
@@ -145,7 +152,6 @@ table {
   width: 670px;
   margin-bottom: 48px;
 }
-
 .section__metrics{
   display: flex;
   justify-content: space-between;
@@ -189,23 +195,102 @@ table {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #646667;
+  margin-bottom: 48px;
 }
 .section__title{
   margin-bottom: 48px;
 }
-.section__title{
+.wrap__title{
   display: flex;
 }
-.section__sidebar{
+.wrap__sidebar{
   display: flex;
   justify-content: space-between;
-  background-color: aqua;
+  align-items: center;
 }
 .sidebar__item ~ .sidebar__item{
-  margin-left: 15px;
+  margin-left: 65px;
 }
 .link_style_sidebar{
   --link-fs: 16px;
   --link-clr: #D3CFCE;
+  border: none;
+  background: none;
+  max-width: 100px;
+}
+.link_style_sidebar:hover{
+  color: #007397;
+}
+.link_style_sidebar:focus{
+  color: #007397;
+  outline: none;
+}
+.preview{
+  display: flex;
+  justify-content: space-between;
+}
+.card{
+  width: 370px;
+  height: 100%;
+}
+.card__title{
+  position: absolute;
+  max-width: 300px;
+  left: 30px;
+  right: 30px;
+  top: 220px;
+  bottom: 45px;
+}
+.link_style_preview-description{
+  --link-fs: 12px;
+  --link-clr: #FFFFFF;
+}
+.link_style_preview-title{
+  --link-fs: 24px;
+  --link-clr: #FFFFFF;
+  line-height: 32px;
+  letter-spacing: 1px;
+}
+.card__description{
+  position: absolute;
+  left: 30px;
+  right: 30px;
+  top: 24px;
+  bottom: 300px;
+}
+.card__link{
+  display: block;
+  position: relative;
+  margin-bottom: 32px;
+}
+.preview__excerpt{
+  margin-bottom: 32px;
+}
+.text_style_preview{
+  --text-color: #646667;
+  --text-fsize: 16px;
+}
+.link_style_preview-more{
+  --link-clr: #007397;
+  --link-fs: 16px;
+  letter-spacing: 1px;
+  line-height: 16px;
+}
+.footer{
+  display: flex;
+  justify-content: space-between;
+}
+.footer__terms{
+  display: flex;
+  justify-content: space-between;
+}
+.link_style_footer{
+  --link-clr: #646667;
+  --link-fs: 12px;
+}
+.map{
+  margin-bottom: 45px;
+}
+.footer__link{
+  margin-left: 35px;
 }
